@@ -24,6 +24,10 @@ resource "aws_s3_bucket" "data" {
 
 
 
+
+
+
+
 resource "aws_s3_bucket_object" "data_object" {
   bucket = aws_s3_bucket.data.id
   key    = "customer-master.xlsx"
